@@ -52,12 +52,12 @@ def sendMessage():
         speak("Whats the message")
         message = takeCommand()
         
-        pywhatkit.sendwhatmsg("+918806903085",message,time_hour=strTime,time_min=update) 
+        pywhatkit.sendwhatmsg("Enter the number",message,time_hour=strTime,time_min=update) 
    
     elif "Suresh" in person_name:
         speak("Whats the message")
         message = takeCommand()
-        pywhatkit.sendwhatmsg("+918888344404",message,time_hour=strTime,time_min=update)
+        pywhatkit.sendwhatmsg("Enter the number",message,time_hour=strTime,time_min=update)
        
 
     sendMessage()
