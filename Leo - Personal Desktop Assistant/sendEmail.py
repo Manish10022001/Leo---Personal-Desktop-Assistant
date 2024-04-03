@@ -5,8 +5,8 @@
 #    # server.starttls()
 
 #     # Enable low security in gmail
-#     server.login('manishshirsat2850@gmail.com', 'Viratkohli@18')
-#     server.sendmail('manishshirsat2850@gmail.com', to, content)
+#     server.login('email', 'password')
+#     server.sendmail('email', to, content)
 #     server.close()
 
 # import smtplib
