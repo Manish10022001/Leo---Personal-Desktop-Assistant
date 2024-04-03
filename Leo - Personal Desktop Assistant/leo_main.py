@@ -224,7 +224,6 @@ if __name__=="__main__":
                         webbrowser.open  #(Here put the link of your video)
 
                 ##News
-                ##API - 38aa4834cf4247c789c4be909fab3f67
                 elif "news" in query:
                     from NewsRead import latestnews
                     latestnews()
@@ -250,14 +249,14 @@ if __name__=="__main__":
                     from twilio.rest import Client
                     import os
 
-                    account_sid ='ACa526ab67c6fdd72033a203d4e19620f7'
-                    auth_token ='7f9dd8709409c261f0214420ab5d27f2'
+                    account_sid ='Enter your twilio account sid'
+                    auth_token ='Enter your auth_token'
                     client = Client(account_sid, auth_token)
 
                     message = client.messages.create(
                         body=msz,
-                        from_="+17163562165",
-                        to="+918806903085"
+                        from_="number given from twilio",
+                        to="enter number whom you want ot msg"
                         )
                     
                 #call
@@ -267,14 +266,14 @@ if __name__=="__main__":
 
                     from twilio.rest import Clientl
 
-                    account_sid ='ACa526ab67c6fdd72033a203d4e19620f7'
-                    auth_token ='7f9dd8709409c261f0214420ab5d27f2'
+                    account_sid ='Enter your twilio account sid'
+                    auth_token ='Enter your auth_token'
                     client = Client(account_sid, auth_token)
 
                     message = client.calls .create(
                         twiml='msg',
-                        from_="+17163562165",
-                        to="+918806903085"
+                        from_="number given from twilio",
+                        to="+91 enter number whom you want ot msg"
                     )
 
                 #to open mobile camera
